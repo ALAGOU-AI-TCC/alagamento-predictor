@@ -1,0 +1,35 @@
+feature,importance
+num__precipitacao_acumulada,0.19736557
+cat__intensidade_chuva_nublado,0.07513891
+cat__intensidade_chuva_trovoadas,0.06664659
+cat__intensidade_chuva_trovoada com chuva fraca,0.06615867
+cat__intensidade_chuva_chuva leve,0.06366711
+cat__intensidade_chuva_céu limpo,0.056972694
+cat__intensidade_chuva_trovoada com chuva,0.04690077
+cat__intensidade_chuva_garoa de leve intensidade,0.044779327
+num__tempo_chuva,0.044360124
+num__precipitacao_chuva,0.0397935
+num__pressao,0.034678128
+cat__intensidade_chuva_trovoada com chuva forte,0.033661224
+cat__intensidade_chuva_chuva leve ,0.03175519
+num__ponto_orvalho,0.029203853
+num__umidade,0.026278364
+cat__intensidade_chuva_chuva fraca,0.023863036
+num__temperatura,0.02144734
+cat__intensidade_chuva_chuva moderada,0.020986257
+cat__intensidade_chuva_nuvens dispersas,0.016995603
+cat__intensidade_chuva_névoa,0.016861148
+cat__intensidade_chuva_algumas nuvens,0.01642712
+cat__intensidade_chuva_chuva forte,0.015349944
+cat__intensidade_chuva_chuva moderada ,0.010709557
+cat__intensidade_chuva_neblina,0.0
+cat__intensidade_chuva_chuva forte ,0.0
+cat__intensidade_chuva_chuva muito forte ,0.0
+cat__intensidade_chuva_mist,0.0
+cat__intensidade_chuva_trovoada,0.0
+cat__intensidade_chuva_chuva leva,0.0
+cat__intensidade_chuva_trovoada com chuva ,0.0
+cat__intensidade_chuva_chuva de intensidade forte,0.0
+cat__intensidade_chuva_trovoada com chuva forte ,0.0
+cat__intensidade_chuva_chuvas fortes,0.0
+cat__intensidade_chuva_chuva muito forte,0.0

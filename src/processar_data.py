@@ -1,6 +1,6 @@
 import pandas as pd
 
-df = pd.read_csv('../data/raw/registros-base-07-08-2025.csv')
+df = pd.read_csv('../data/raw/registros-base-10-08-2025.csv')
 df.replace(['NULL', 'null', ''], pd.NA, inplace=True)
 df = df.drop(columns=['id'])
 df = df.dropna(subset=[
@@ -26,7 +26,11 @@ df['historico_alagamento'] = df['historico_alagamento'].astype(int)
 
 df['intensidade_chuva'] = df['intensidade_chuva'].str.lower()
 
-df['bairro'] = df['bairro'].str.lower().str.strip()
+df['bairro'] = (
+    df['bairro']
+    .str.lower()
+    .str.replace(r'\s+', '', regex=True)
+)
 
 df['data_hora'] = pd.to_datetime(df['data_hora'].str.replace('T', ' '))
 
