@@ -1,0 +1,12 @@
+{
+  "tp_plano": 0.27999999999999997,
+  "tm_medio": 0.35999999999999993,
+  "ti_ingreme": 0.5599999999999998,
+  "angulo_corte": 6,
+  "regras": [
+    "declive<2\u00b0\u2192tp_plano",
+    "2\u00b0\u20136\u00b0\u2192tm_medio",
+    "\u22656\u00b0\u2192ti_ingreme"
+  ],
+  "obs": "tp<=tm<=ti (menos positivos em ruas \u00edngremes)"
+}

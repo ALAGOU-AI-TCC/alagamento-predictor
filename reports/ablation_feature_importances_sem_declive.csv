@@ -1,0 +1,33 @@
+feature,importance
+num__precipitacao_acumulada,0.1897901
+num__chuva_media_h,0.14794487
+cat__intensidade_chuva_trovoadas,0.07478352
+cat__intensidade_chuva_céu limpo,0.06665946
+cat__intensidade_chuva_trovoada com chuva fraca,0.058016527
+cat__intensidade_chuva_nublado,0.056395
+cat__intensidade_chuva_trovoada com chuva,0.04646941
+cat__intensidade_chuva_garoa de leve intensidade,0.03495904
+cat__intensidade_chuva_trovoada com chuva forte,0.032020573
+num__precipitacao_chuva,0.031264402
+cat__intensidade_chuva_chuva leve,0.029106129
+num__pressao,0.028198455
+num__ponto_orvalho,0.026893485
+num__umidade,0.026019316
+cat__intensidade_chuva_chuva fraca,0.025333159
+num__solo_elevacao,0.024705296
+cat__intensidade_chuva_chuva forte,0.023478411
+num__temperatura,0.017327137
+cat__intensidade_chuva_nuvens dispersas,0.013979002
+cat__intensidade_chuva_névoa,0.013406216
+num__tempo_chuva,0.012127033
+cat__intensidade_chuva_chuva moderada,0.011391777
+cat__intensidade_chuva_algumas nuvens,0.0097316755
+cat__intensidade_chuva_neblina,0.0
+cat__intensidade_chuva_mist,0.0
+cat__intensidade_chuva_chava moderada,0.0
+cat__intensidade_chuva_chuvas,0.0
+cat__intensidade_chuva_trovoada,0.0
+cat__intensidade_chuva_chuva muito forte,0.0
+cat__intensidade_chuva_chuva leva,0.0
+"cat__intensidade_chuva_chuva forte, névoa",0.0
+cat__intensidade_chuva_chuva de intensidade forte,0.0

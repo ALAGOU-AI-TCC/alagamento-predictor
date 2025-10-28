@@ -1,0 +1,8 @@
+AUPRC: 0.911 | ROC AUC: 0.924 | MCC: 0.638\nMelhor limiar (F2): 0.266667\n\n              precision    recall  f1-score   support
+
+           0      0.976     0.597     0.741       206
+           1      0.721     0.986     0.833       218
+
+    accuracy                          0.797       424
+   macro avg      0.849     0.792     0.787       424
+weighted avg      0.845     0.797     0.788       424

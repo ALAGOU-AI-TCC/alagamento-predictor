@@ -14,16 +14,16 @@ from sklearn.metrics import classification_report, confusion_matrix, roc_curve, 
 df = pd.read_csv('../data/processed/dados_processados.csv')
 
 X = df.drop(columns=["historico_alagamento", "data_hora", "latitude",
-                     "longitude", "bairro", "solo", "precipitacao_diaria", "velocidade_vento"])
+                     "longitude", "bairro", "precipitacao_diaria", "velocidade_vento"])
 y = df["historico_alagamento"]
 
 numerical_features = [
     'temperatura', 'umidade', 'pressao',
     'precipitacao_chuva', 'ponto_orvalho',
-    'tempo_chuva', 'precipitacao_acumulada'
+    'precipitacao_acumulada',"solo_elevacao"
 ]
 
-categorical_features = ['intensidade_chuva']
+categorical_features = ['intensidade_chuva','tempo_chuva' ]
 
 preprocessor = ColumnTransformer(transformers=[
     ('num', StandardScaler(), numerical_features),
@@ -44,6 +44,43 @@ pipeline.fit(X_train, y_train)
 y_pred = pipeline.predict(X_test)
 y_proba = pipeline.predict_proba(X_test)[:, 1] 
 
+# ==== Cross-Validation ====
+from sklearn.model_selection import StratifiedKFold, cross_validate
+from sklearn.metrics import make_scorer, fbeta_score
+
+cv = StratifiedKFold(n_splits=10, shuffle=True, random_state=42)
+
+scoring = {
+    'accuracy': 'accuracy',
+    'precision': 'precision',
+    'recall': 'recall',
+    'f1': 'f1',
+    'f2': make_scorer(fbeta_score, beta=2),
+    'roc_auc': 'roc_auc'
+}
+
+cv_results = cross_validate(
+    pipeline, X, y,
+    cv=cv,
+    scoring=scoring,
+    n_jobs=-1,
+    return_train_score=False
+)
+
+# Resumo média ± desvio
+import numpy as np, pandas as pd
+summary_rows = []
+for m in ['accuracy','precision','recall','f1','f2','roc_auc']:
+    vals = cv_results[f'test_{m}']
+    summary_rows.append({'metric': m,
+                         'mean': np.mean(vals),
+                         'std': np.std(vals)})
+cv_df = pd.DataFrame(summary_rows).round(4)
+print("\nResultados de Cross-Validation Regressão Logistica (k=10):")
+print(cv_df)
+
+cv_df.to_csv('../reports/cv_logreg_metrics.csv', index=False)
+# ==== fim do bloco de CV ====
 
 
 cm = confusion_matrix(y_test, y_pred)
