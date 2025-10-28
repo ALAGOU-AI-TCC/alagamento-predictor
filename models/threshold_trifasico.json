@@ -1,12 +1,12 @@
 {
-  "tp_plano": 0.27999999999999997,
-  "tm_medio": 0.35999999999999993,
-  "ti_ingreme": 0.5599999999999998,
-  "angulo_corte": 6,
+  "tp_plano": 0.2,
+  "tm_medio": 0.3799999999999999,
+  "ti_ingreme": 0.3799999999999999,
+  "angulo_corte": 4,
   "regras": [
     "declive<2\u00b0\u2192tp_plano",
-    "2\u00b0\u20136\u00b0\u2192tm_medio",
-    "\u22656\u00b0\u2192ti_ingreme"
+    "2\u00b0\u20134\u00b0\u2192tm_medio",
+    "\u22654\u00b0\u2192ti_ingreme"
   ],
   "obs": "tp<=tm<=ti (menos positivos em ruas \u00edngremes)"
 }

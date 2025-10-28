@@ -1,0 +1,41 @@
+feature,importance
+num__precipitacao_acumulada,0.22111005
+num__tempo_chuva,0.13189337
+cat__intensidade_chuva_céu limpo,0.04434731
+cat__intensidade_chuva_nublado,0.041193493
+cat__intensidade_chuva_trovoada com chuva fraca,0.041130207
+cat__intensidade_chuva_trovoadas,0.03993664
+cat__intensidade_chuva_trovoada com chuva,0.038016345
+num__precipitacao_chuva,0.035568155
+cat__declive_bin_4–6°,0.03306911
+cat__intensidade_chuva_trovoada com chuva forte,0.027752975
+cat__declive_bin_2–4°,0.026378091
+cat__declive_bin_10–15°,0.025625292
+num__pressao,0.024909038
+cat__intensidade_chuva_garoa de leve intensidade,0.024823027
+num__ponto_orvalho,0.02414813
+num__umidade,0.023401393
+cat__declive_bin_8–10°,0.023229282
+cat__declive_bin_6–8°,0.021468671
+cat__intensidade_chuva_chuva fraca,0.020183006
+cat__intensidade_chuva_chuva forte,0.020169314
+cat__intensidade_chuva_chuva leve,0.01993296
+num__solo_elevacao,0.019627525
+num__declive_graus,0.018925682
+num__temperatura,0.013283289
+cat__intensidade_chuva_nuvens dispersas,0.00998862
+cat__intensidade_chuva_névoa,0.009849117
+num__slope_plano,0.0076719928
+cat__intensidade_chuva_algumas nuvens,0.006320388
+cat__intensidade_chuva_chuva moderada,0.006047526
+cat__intensidade_chuva_neblina,0.0
+cat__intensidade_chuva_mist,0.0
+cat__intensidade_chuva_trovoada,0.0
+cat__intensidade_chuva_chuva muito forte,0.0
+cat__intensidade_chuva_chuva leva,0.0
+"cat__intensidade_chuva_chuva forte, névoa",0.0
+cat__declive_bin_0–2°,0.0
+cat__intensidade_chuva_chuva de intensidade forte,0.0
+cat__declive_bin_15–60°,0.0
+cat__intensidade_chuva_chava moderada,0.0
+cat__intensidade_chuva_chuvas,0.0
